@@ -5,11 +5,11 @@ import { createRestoItemTemplate } from '../templates/template-creator';
 const RestoFavorite = {
     async render() {
         return `
-        <h2>Your favorite resto </h2>
-
         <div class="content">
-        <h2 class="content__heading">favorite</h2>
-        <div id="movies" class="movies">
+        <h2 class="content__heading text-center">Restoran favorit &hearts;</h2>
+        <p class="text-center text-grey"><i>list restoran yang bakal kamu datengin</i></p>
+
+        <div id="restos" class="restos">
  
         </div>
       </div>
@@ -22,7 +22,7 @@ const RestoFavorite = {
         const resto = await RestoDbSource.favoriteResto();
         // console.log(resto);
 
-        const restoContainer = document.querySelector('#movies');
+        const restoContainer = document.querySelector('#restos');
         resto.forEach((restaurants) => {
             restoContainer.innerHTML += createRestoItemTemplate(restaurants);
         });

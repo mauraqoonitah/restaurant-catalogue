@@ -26,6 +26,8 @@
     "webpack-merge": "^5.4.0"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "node-sass": "^5.0.0",
     "regenerator-runtime": "^0.13.7"
   }
 }

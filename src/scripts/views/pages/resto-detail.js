@@ -6,8 +6,7 @@ import { createRestoDetailTemplate } from '../templates/template-creator';
 const RestoDetail = {
     async render() {
         return `
-        <h2>Detail resto </h2>
-        <div id="movie" class="movie"></div>
+        <div id="resto" class="resto"></div>
         `;
     },
 
@@ -15,7 +14,7 @@ const RestoDetail = {
         const url = UrlParser.parseActiveUrlWithoutCombiner();
         const resto = await RestoDbSource.detailResto(url.id);
         // console.log(resto);
-        const restoContainer = document.querySelector('#movie');
+        const restoContainer = document.querySelector('#resto');
         restoContainer.innerHTML = createRestoDetailTemplate(resto);
     },
 
