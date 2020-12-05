@@ -99,7 +99,7 @@ h3 {
     margin: 60px auto;
     font-size: 14px;
     max-width: 500px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
@@ -336,6 +336,98 @@ main {
     margin-left: 10px;
 }
 
+.resto_detail_description {
+    text-align: center;
+}
+
+
+/* tab makanan minuman */
+
+.sub_title_menu {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.255);
+}
+
+.tab-container {
+    background-color: #f5f5f5;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 7px 7px 20px -10px rgba(51, 51, 51, 0.5);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px 10px 5px;
+    max-width: 90%;
+    margin: 20px 20px 20px 20px;
+}
+
+.tab-container p {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.tab-container-detail {
+    background-color: #f5f5f5;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 7px 7px 20px -10px rgba(51, 51, 51, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+    padding: 10px 5px 10px 5px;
+    margin: 5px 20px 20px 20px;
+    font-size: 14px;
+}
+
+.resto_menu_food {
+    width: 50%;
+    text-align: center;
+}
+
+.resto_menu_food :hover {
+    color: #d61515;
+}
+
+.resto_menu_drink {
+    width: 50%;
+    text-align: center;
+}
+
+.resto_menu_drink :hover {
+    color: #d61515;
+}
+
+.tab {
+    background: #ffcdd2;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+.tab i {
+    font-size: 1.2em;
+    color: #d61515;
+    ;
+}
+
+.tab p {
+    margin-left: 10px;
+    max-width: 100px;
+    transition: max-width 0.4s linear;
+    padding: 5px 2px 5px 5px;
+}
+
+
+/* end tab container */
+
 .hr_effect {
     border: 0;
     height: 2px;
@@ -383,12 +475,40 @@ main {
 }
 
 
+/* customer review */
+
+.customer_comment {
+    border: solid 1px rgba(0, 0, 0, 0.435);
+    padding: 10px 5px 10px 5px;
+    margin: 20px 20px 20px 20px;
+}
+
+.ulasan {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.customer_name {
+    font-weight: bold;
+}
+
+.customer_review {
+    color: #212121;
+}
+
+.customer_date {
+    color: #757575;
+}
+
+
 /*
     Footer
   */
 
 footer {
     padding: 16px;
+    font-size: 12px;
+    margin-top: 100px;
 }
 
 footer p {
