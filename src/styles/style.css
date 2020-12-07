@@ -326,7 +326,7 @@ main {
 
 .resto .resto_img {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 7px 20px -10px rgba(51, 51, 51, 0.5);
     margin-top: 10px;
@@ -348,19 +348,17 @@ main {
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 60px;
     font-size: 30px;
-    color: rgba(0, 0, 0, 0.255);
+    color: #bdbdbd;
 }
 
 .tab-container {
-    background-color: #f5f5f5;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    box-shadow: 7px 7px 20px -10px rgba(51, 51, 51, 0.5);
     display: flex;
     justify-content: space-around;
     padding: 10px 5px 10px 5px;
-    max-width: 90%;
-    margin: 20px 20px 20px 20px;
+    max-width: 100%;
+    margin: 5px 0px 0px 0px;
 }
 
 .tab-container p {
@@ -370,15 +368,15 @@ main {
 }
 
 .tab-container-detail {
-    background-color: #f5f5f5;
+    background-color: #ffebee;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 7px 7px 20px -10px rgba(51, 51, 51, 0.5);
     display: flex;
     justify-content: space-evenly;
-    max-width: 90%;
+    max-width: 100%;
     padding: 10px 5px 10px 5px;
-    margin: 5px 20px 20px 20px;
+    margin: 0px 0px 20px 0px;
     font-size: 14px;
 }
 
@@ -403,7 +401,8 @@ main {
 .tab {
     background: #ffcdd2;
     color: black;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -523,7 +522,6 @@ main {
 footer {
     padding: 16px;
     font-size: 12px;
-    margin-top: 100px;
 }
 
 footer p {

@@ -17,7 +17,6 @@ const createRestoDetailTemplate = (restaurant) => `
 </div>
 <div class="resto__overview">
     <p class="mtop-20 resto_detail_description">${restaurant.description}</p>
-
     <h4 class= "sub_title_menu"> Menu </h4>
     <div class="tab-container">
         <div class="tab ">
@@ -29,7 +28,6 @@ const createRestoDetailTemplate = (restaurant) => `
             <p class="hovering ">Minuman</p>
         </div>
     </div>
-
     <div class="tab-container-detail">
         <div class="resto_menu_food">
             <p> ${restaurant.menus.foods .map( (food) => `
@@ -61,7 +59,6 @@ const createRestoDetailTemplate = (restaurant) => `
     <div class="card shadow">
         Yuk, langsung datengin restoran nya daripada penasaran!
     </div>
-
 `;
 
 const createRestoItemTemplate = (restaurants) => `
