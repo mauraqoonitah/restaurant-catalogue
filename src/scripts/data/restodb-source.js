@@ -15,17 +15,7 @@ class RestoDbSource {
     }
 
 
-    static async favoriteResto() {
-        const response = await fetch(API_ENDPOINT.RestoFavorite);
-        const responseJson = await response.json();
-        return responseJson.restaurants;
-
-
-
-    }
-
 
 }
 
 export default RestoDbSource;
-

@@ -9,16 +9,15 @@ const RestoHome = {
                 <h1 tabindex="0" class="hero-title">Mealzy</h1>
                 <p tabindex="0" class="hero-tag">mau makan dimana hari ini?</p>
             </div>
-        </div>
+         </div>
     
         <div class="content">
-        <h2 class="heading">List Restoran</h2>
-        <p class="text-center text-grey"><i>Coba rekomendasi dari kami, nih.</i></p>
-
-        <div id="restos" class="restos">
+            <h2 class="heading" tabindex="0" >List Restoran</h2>
+            <p class="text-center text-grey" tabindex="0" ><i>Coba rekomendasi dari kami, nih.</i></p>
+        
+            <div id="restos" class="restos">
+            </div>
         </div>
-      </div>
-
 
         `;
     },
@@ -29,7 +28,6 @@ const RestoHome = {
         resto.forEach((restaurants) => {
             restoContainer.innerHTML += createRestoItemTemplate(restaurants);
         });
-        // console.log(resto);
 
     },
 

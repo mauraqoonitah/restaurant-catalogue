@@ -83,26 +83,24 @@ const createRestoItemTemplate = (restaurants) => `
     </div>
 `;
 
+const createFavoriteButtonTemplate = () => `
+  <button aria-label="your fav resto" id="favoButton" class="favo">
+     <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+
+const createFavoritedButtonTemplate = () => `
+  <button aria-label="unfav the resto" id="favoButton" class="favo">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
+
+
 
 export {
   createRestoDetailTemplate,
-  createRestoItemTemplate
+  createRestoItemTemplate,
+  createFavoriteButtonTemplate,
+  createFavoritedButtonTemplate
 }
-
-
-
-// navigation tab makanan minuman
-const tabs = document.querySelectorAll('.tab');
-
-tabs.forEach(clickedTab => {
-    clickedTab.addEventListener('click', () => {
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-        clickedTab.classList.add('active');
-        const clickedTabBGColor = getComputedStyle(clickedTab).getPropertyValue('color');
-        console.log(clickedTabBGColor);
-        document.style.background = clickedTabBGColor;
-
-    });
-});

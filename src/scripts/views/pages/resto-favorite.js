@@ -1,5 +1,5 @@
-import RestoDbSource from '../../data/restodb-source';
 import { createRestoItemTemplate } from '../templates/template-creator';
+import FavoriteRestoIdb from '../../data/favoriteresto-idb';
 
 
 const RestoFavorite = {
@@ -19,8 +19,7 @@ const RestoFavorite = {
     },
 
     async afterRender() {
-        const resto = await RestoDbSource.favoriteResto();
-        // console.log(resto);
+        const resto = await FavoriteRestoIdb.getAllRestos();
 
         const restoContainer = document.querySelector('#restos');
         resto.forEach((restaurants) => {
