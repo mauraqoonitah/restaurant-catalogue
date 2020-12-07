@@ -72,7 +72,9 @@ const createRestoItemTemplate = (restaurants) => `
             <div class="resto-item__content">
                 <h3 class="text-center hovering"><a href="${`/#/detail/${restaurants.id}`}">${restaurants.name}</a></h3>
                 <div class="resto-item__header__rating">
-                    <p> <i class="mbtm-2 star_rating_item fas fa-star"></i><span class="resto-item__header__rating__score">${restaurants.rating}</span></p>
+                <p> <i class=" star_rating_item fas fa-star"></i><span class="resto-item__header__rating__score"><b>${restaurants.rating}</b></span></p>
+                <small class="text-grey">${restaurants.city}</small>
+
                 </div>
                 <hr class="mtop-10 hr_effect">
                 <p class="mtop-10">${restaurants.description}</p>
