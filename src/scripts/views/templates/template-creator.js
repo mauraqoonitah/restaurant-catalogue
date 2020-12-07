@@ -42,26 +42,25 @@ const createRestoDetailTemplate = (restaurant) => `
                 `, ) .join('')}</p>
         </div>
     </div>
-
-
     <h4 class="sub_title_menu"> Review </h4>
-    <div class="customer_comment">
-        <div class="ulasan">
-            ${restaurant.customerReviews .map( (review) => `
-            <p class="customer_name">${review.name}</p>
-            <p class="customer_review">${review.review}</p>
-            <small class="customer_date date"><i class="far fa-clock"></i> ${review.date}</small> `, ) .join('')}
+    <div class="customer_comment scrollbar">
+        ${restaurant.customerReviews .map( (review) => `
+        <div class="border">
+            <div class="">
+                <img class="userpic" src="./images/userpic.png" alt="userpic">
+            </div>
+            <div class="">
+                <p class="customer_date date">${review.date}</p>
+                <p class="customer_name">${review.name}</p>
+                <p class="customer_review">${review.review}</p>
+            </div>
         </div>
+        `, ) .join('')}
     </div>
-
-
+    
     <div class="card shadow">
         Yuk, langsung datengin restoran nya daripada penasaran!
     </div>
-
-</div>
-
-
 
 `;
 
