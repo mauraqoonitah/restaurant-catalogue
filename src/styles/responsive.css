@@ -1,3 +1,19 @@
+@media screen and (max-width: 650px) {
+    main{
+        padding: 10px;
+    }
+    .resto .resto_img, .resto_detail {
+        margin: 0 auto;
+
+    }
+    .mealzy {
+        text-align: center;
+    }
+
+}
+
+
+
 @media screen and (min-width: 650px) {
     .app-bar {
         grid-template-columns: 1fr auto;

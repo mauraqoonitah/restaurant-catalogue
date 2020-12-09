@@ -94,6 +94,7 @@ h3 {
     font-size: 12px;
 }
 
+
 .card {
     padding: 5px 0;
     background: rgb(241, 241, 241);
@@ -329,10 +330,9 @@ main {
 
 .resto .resto_img {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     border-radius: 10px;
     box-shadow: 0 7px 20px -10px rgba(51, 51, 51, 0.5);
-    margin-top: 10px;
 }
 
 .resto_detail {
