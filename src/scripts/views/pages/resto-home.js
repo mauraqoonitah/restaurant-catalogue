@@ -6,14 +6,14 @@ const RestoHome = {
     return `
         <div class="jumbotron">
             <div class="hero">
-                <h1 tabindex="0" class="hero-title">Mealzy</h1>
-                <p tabindex="0" class="hero-tag">mau makan dimana hari ini?</p>
+                <h1  class="hero-title">Mealzy</h1>
+                <p class="hero-tag">mau makan dimana hari ini?</p>
             </div>
          </div>
     
         <div class="content">
-            <h2 class="heading" tabindex="0" id="mainContent2" tabindex="0" >List Restoran</h2>
-            <p class="text-center text-grey" tabindex="0" ><i>Coba rekomendasi dari kami, nih.</i></p>
+            <h2 class="heading" tabindex="0" >List Restoran</h2>
+            <p class="text-center text-grey"  tabindex="0"><i>Coba rekomendasi dari kami, nih.</i></p>
         
             <div id="restos" class="restos">
             </div>

@@ -560,20 +560,18 @@ footer p a {
 
 .skip-link {
     position: absolute;
-    top: 10vh;
+    top: -40px;
     right: 0;
     background-color: #d61515;
-    border-radius: 10px;
     color: white;
     padding: 8px;
     z-index: 100;
     list-style: none;
-    font-size: 12px;
 }
 
  
 .skip-link:focus {
-    top: 10vh;
+    top: 0;
 }
  
 .skip-link:hover {
