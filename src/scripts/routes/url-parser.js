@@ -1,31 +1,32 @@
-//buat sebuah fungsi yang dapat menguraikan (parsing) URL aktif menjadi nilai yang kita butuhkan dalam menentukan route.
+// buat sebuah fungsi yang dapat menguraikan (parsing) URL aktif
+// menjadi nilai yang kita butuhkan dalam menentukan route.
 
 const UrlParser = {
-    parseActiveUrlWithCombiner() {
-        const url = window.location.hash.slice(1).toLowerCase();
-        const splitedUrl = this._urlSplitter(url);
-        return this._urlCombiner(splitedUrl);
-    },
+  parseActiveUrlWithCombiner() {
+    const url = window.location.hash.slice(1).toLowerCase();
+    const splitedUrl = this._urlSplitter(url);
+    return this._urlCombiner(splitedUrl);
+  },
 
-    parseActiveUrlWithoutCombiner() {
-        const url = window.location.hash.slice(1).toLowerCase();
-        return this._urlSplitter(url);
-    },
+  parseActiveUrlWithoutCombiner() {
+    const url = window.location.hash.slice(1).toLowerCase();
+    return this._urlSplitter(url);
+  },
 
-    _urlSplitter(url) {
-        const urlsSplits = url.split('/');
-        return {
-            resource: urlsSplits[1] || null,
-            id: urlsSplits[2] || null,
-            verb: urlsSplits[3] || null,
-        };
-    },
+  _urlSplitter(url) {
+    const urlsSplits = url.split('/');
+    return {
+      resource: urlsSplits[1] || null,
+      id: urlsSplits[2] || null,
+      verb: urlsSplits[3] || null,
+    };
+  },
 
-    _urlCombiner(splitedUrl) {
-        return (splitedUrl.resource ? `/${splitedUrl.resource}` : '/')
+  _urlCombiner(splitedUrl) {
+    return (splitedUrl.resource ? `/${splitedUrl.resource}` : '/')
             + (splitedUrl.id ? '/:id' : '')
             + (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
-    },
+  },
 };
 
 export default UrlParser;

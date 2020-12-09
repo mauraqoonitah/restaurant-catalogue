@@ -2,16 +2,14 @@
 
 import CONFIG from '../../globals/config';
 
-const createRestoDetailTemplate = (restaurant) =>
-
-    `
+const createRestoDetailTemplate = (restaurant) => `
 <img class="resto_img" crossorigin="anonymous" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
 <div class="resto_detail">
     <h2 class="mealzy mbtm-2">${restaurant.name}</h2>
     <p class="mbtm-2">
-        ${restaurant.categories .map((category) => `
+        ${restaurant.categories.map((category) => `
         <p class="detail_categories">${category.name}</p>
-        `, ).join('')}
+        `).join('')}
     </p>
     <i class="mtop-20 icon fas fa-map-marker-alt"></i>${restaurant.city}, ${restaurant.address}</p>
     <i class="mbtm-2 star_rating fas fa-star"></i><b>${restaurant.rating}</b>
@@ -31,19 +29,19 @@ const createRestoDetailTemplate = (restaurant) =>
     </div>
     <div class="tab-container-detail">
         <div class="resto_menu_food">
-            <p> ${restaurant.menus.foods .map( (food) => `
+            <p> ${restaurant.menus.foods.map((food) => `
                 <p class="menu-list">${food.name}</p>
-                `, ) .join('')} </p>
+                `).join('')} </p>
         </div>
         <div class="resto_menu_drink">
-            <p> ${restaurant.menus.drinks .map( (drink) => `
+            <p> ${restaurant.menus.drinks.map((drink) => `
                 <p class="menu-list">${drink.name}</p>
-                `, ) .join('')}</p>
+                `).join('')}</p>
         </div>
     </div>
     <h4 class="sub_title_menu"> Review </h4>
     <div class="customer_comment scrollbar">
-        ${restaurant.customerReviews .map( (review) => `
+        ${restaurant.customerReviews.map((review) => `
         <div class="border">
             <div class="">
                 <img class="userpic" crossorigin="anonymous" src="./images/userpic.png" alt="userpic">
@@ -54,7 +52,7 @@ const createRestoDetailTemplate = (restaurant) =>
                 <p class="customer_review">${review.review}</p>
             </div>
         </div>
-        `, ) .join('')}
+        `).join('')}
     </div>
     
     <div class="restaurant-reviews-container"></div>
@@ -62,10 +60,6 @@ const createRestoDetailTemplate = (restaurant) =>
         Yuk, langsung datengin restoran nya daripada penasaran!
     </div>
 `;
-
-
-
-
 
 const createRestoItemTemplate = (restaurants) => `
 
@@ -101,12 +95,10 @@ const createFavoritedButtonTemplate = () => `
   </button>
 `;
 
-
-
 export {
   createRestoDetailTemplate,
   createRestoItemTemplate,
   createFavoriteButtonTemplate,
   createFavoritedButtonTemplate,
 
-}
+};
