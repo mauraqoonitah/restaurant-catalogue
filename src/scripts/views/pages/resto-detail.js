@@ -1,6 +1,6 @@
 import UrlParser from '../../routes/url-parser';
 import RestoDbSource from '../../data/restodb-source';
-import { createRestoDetailTemplate, createFavoriteButtonTemplate } from '../templates/template-creator';
+import { createRestoDetailTemplate } from '../templates/template-creator';
 import FavoButtonInitiator from '../../utils/favo-button-initiator';
 
 
@@ -30,6 +30,9 @@ const RestoDetail = {
 
             }
         });
+
+
+
 
     },
 

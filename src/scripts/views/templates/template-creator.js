@@ -2,9 +2,10 @@
 
 import CONFIG from '../../globals/config';
 
-const createRestoDetailTemplate = (restaurant) => `
+const createRestoDetailTemplate = (restaurant) =>
 
-<img class="resto_img" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+    `
+<img class="resto_img" crossorigin="anonymous" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
 <div class="resto_detail">
     <h2 class="mealzy mbtm-2">${restaurant.name}</h2>
     <p class="mbtm-2">
@@ -45,7 +46,7 @@ const createRestoDetailTemplate = (restaurant) => `
         ${restaurant.customerReviews .map( (review) => `
         <div class="border">
             <div class="">
-                <img class="userpic" src="./images/userpic.png" alt="userpic">
+                <img class="userpic" crossorigin="anonymous" src="./images/userpic.png" alt="userpic">
             </div>
             <div class="">
                 <p class="customer_date date">${review.date}</p>
@@ -56,17 +57,22 @@ const createRestoDetailTemplate = (restaurant) => `
         `, ) .join('')}
     </div>
     
+    <div class="restaurant-reviews-container"></div>
     <div class="card shadow">
         Yuk, langsung datengin restoran nya daripada penasaran!
     </div>
 `;
+
+
+
+
 
 const createRestoItemTemplate = (restaurants) => `
 
     <div class="hovereffect">
         <div class="resto-item">
             <div class="resto-item__header  hovering">
-                <img class="resto-item__header__poster" src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" />
+                <img class="resto-item__header__poster" crossorigin="anonymous" src="${CONFIG.BASE_IMAGE_URL + restaurants.pictureId}" alt="${restaurants.name}" />
 
             </div>
             <div class="resto-item__content">
@@ -97,10 +103,10 @@ const createFavoritedButtonTemplate = () => `
 
 
 
-
 export {
   createRestoDetailTemplate,
   createRestoItemTemplate,
   createFavoriteButtonTemplate,
-  createFavoritedButtonTemplate
+  createFavoritedButtonTemplate,
+
 }

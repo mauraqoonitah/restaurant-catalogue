@@ -18,3 +18,23 @@ window.addEventListener('load', () => {
     app.renderPage();
     swRegister();
 });
+
+function preLoader() {
+    var preLoader = `
+    <div class="preloader-wrapper big active" style="position: relative; left: calc(50% - 30px); top:50%;">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  `;
+    document.getElementById("preLoader").innerHTML = preLoader;
+
+}
