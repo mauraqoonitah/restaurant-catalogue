@@ -555,3 +555,27 @@ footer p a {
     color: #d61515;
     text-decoration: none;
 }
+/* skip to content */
+
+.skip-link {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: #d61515;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    list-style: none;
+    font-size: 12px;
+}
+
+ 
+.skip-link:focus {
+    top: 10vh;
+}
+ 
+.skip-link:hover {
+    background-color: blanchedalmond;
+    color: black;
+}
