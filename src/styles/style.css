@@ -56,6 +56,7 @@ h3 {
 .mealzy {
     font-family: 'Caveat', cursive;
     color: #d61515;
+    padding: 10px;
 }
 
 .sub_title {
@@ -131,7 +132,7 @@ h3 {
     background-color: transparent;
     border: none;
     font-size: 18px;
-    padding: 8px;
+    padding: 15px;
     cursor: pointer;
 }
 
