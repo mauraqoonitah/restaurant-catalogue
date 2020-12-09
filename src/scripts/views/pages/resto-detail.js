@@ -6,8 +6,6 @@ import FavoButtonInitiator from '../../utils/favo-button-initiator';
 const RestoDetail = {
   async render() {
     return `
-    <a href="#/detail/:id/mainContentDetail" class="skip-link" aria-label="skip to content">Langsung menuju ke konten</a>
-
         <div id="resto" class="resto"></div>
         <div id="favoButtonContainer"></div>
         `;
