@@ -70,7 +70,7 @@ const createRestoItemTemplate = (restaurants) => `
 
             </div>
             <div class="resto-item__content">
-                <h3 class="text-center hovering"  tabindex="0"><a href="${`/#/detail/${restaurants.id}`}"  tabindex="0" >${restaurants.name}</a></h3>
+                <h3 class="text-center hovering"  tabindex="0"><a href="${`/#/detail/${restaurants.id}`}" class="mealzy-a" tabindex="0" >${restaurants.name}</a></h3>
                 <div class="resto-item__header__rating">
                 <p> <i class=" star_rating_item fas fa-star"></i><span class="resto-item__header__rating__score"  tabindex="0"><b>${restaurants.rating}</b></span></p>
                 <small class="text-grey" tabindex="0">${restaurants.city}</small>
