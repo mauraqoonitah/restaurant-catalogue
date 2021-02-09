@@ -13,6 +13,6 @@
 > - Web Server for Chrome.
 > - Terminal.
 
-## Screenshot Football Fav App
+## Screenshot Mealzy Restaurant Catalogue
 <img src="Screenshot Mealzy 1.jpg" width="700" />
 <img src="Screenshot Mealzy 2.jpg" width="700" />
