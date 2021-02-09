@@ -7,8 +7,12 @@
 - Implement WebSocket and Notification
 - Implement Dicoding API: https://restaurant-api.dicoding.dev/
 
-### Tools used:
+## Tools used:
 > - Text Editor VSCode
 > - Google Chrome Web Browser.
 > - Web Server for Chrome.
 > - Terminal.
+
+## Screenshot Football Fav App
+<img src="Screenshot Mealzy 1.jpg" width="700" />
+<img src="Screenshot Mealzy 2.jpg" width="700" />
